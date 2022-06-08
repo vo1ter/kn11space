@@ -1,0 +1,12 @@
+ErrorDocument 404 https://kn11.space/404
+ErrorDocument 403 https://kn11.space/403
+Options All -Indexes
+AddType application/x-httpd-php .html .htm .php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+<FilesMatch "navbar.html|footer.html">
+Order Deny,Allow
+Deny from all
+</FilesMatch>

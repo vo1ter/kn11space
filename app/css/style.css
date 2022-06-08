@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 15px;
+    border-bottom: 1px black solid;
+}
+
+.navbar-element {
+    padding: 0px 10px 0px 10px;
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a:hover, .navbar-element:hover {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+    max-width: 90%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.7em;
+    margin: 20px 0;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.left {
+    margin-right: auto;
+}
+
+table {
+  width: 50%;
+  max-width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 2px white solid;
+}
+
+table td, table th {
+  border: 2px solid;
+  padding: 6px;
+  text-align: center
+}
+
+.we {
+    width: 15%;
+    max-width: 15%;
+}
+
+.wr {
+    max-width: 70%;
+}
+
+hr {
+    margin: 8px 0;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px rgb(194, 194, 194) solid;
+    padding: 15px;
+    margin: 15px;
+}
+
+.button {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 50px;
+    text-align: center !important;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+    color: grey !important;
+}
+
+.disabled:hover {
+    text-shadow: none;
+}
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-bottom: auto;
+    max-width: 50%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0 0 0;
+    padding: 15px 0;
+    border-top: 1px solid black;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    margin: 0 20px;
+}
+
+.footer-list-title {
+    font-size: 1.45em;
+    text-decoration: underline;
+}
+
+.footer-element {
+    text-decoration: none;
+    color: inherit;
+    padding: 4px 0;
+}
+
+.login:nth-child(1) {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    outline: none;
+    margin: 5px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.iconify {
+    padding-right: 6px;
+    margin-bottom: -2px;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column !important;
+        max-width: 98%;
+    }
+
+    .child-container {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    table {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .navbar-element {
+        margin: 11px 0;
+        font-size: 1.25em;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-list-title {
+        text-align: center;
+    }
+
+    .footer-list {
+        margin: 13px 0;
+        text-align: center;
+    }
+
+    .right {
+        margin-left: 0;
+    }
+
+    .user-section {
+        flex-direction: row;
+    }
+}
