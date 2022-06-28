@@ -262,10 +262,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `pass`, `telegram`, `status`, `theme`, `lastip`) VALUES
-(3, 'root', '2987b5dbd4fc1359db4379c4bba34203', 'iwillbedeaduntilnextmorning', 1, 'light', '::1'),
-(9, 'kn11', 'eb03037efd680c33f29cfcef110fdcfb', 'none', 1, 'light', '172.68.238.113'),
-(13, 'Назар', 'f7d0c9e799d45b4f45dee35d0982e467', 'nazarS123', 0, 'light', '172.68.238.141'),
-(14, 'Feeld', 'f29f8af431c68379c91182e4cbfb6692', 'feeld_nt', 1, 'light', '141.101.76.243');
+(3, 'root', '', 'iwillbedeaduntilnextmorning', 1, 'light', '::1'),
+(9, 'kn11', '', 'none', 1, 'light', '172.68.238.113'),
+(13, 'Назар', '', 'nazarS123', 0, 'light', '172.68.238.141'),
+(14, 'Feeld', '', 'feeld_nt', 1, 'light', '141.101.76.243');
 
 --
 -- Indexes for dumped tables
